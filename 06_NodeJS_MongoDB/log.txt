@@ -1,0 +1,16 @@
+
+1722062911148 : ::1 : POST : /api/users/
+1722063031335 : ::1 : POST : /api/users/
+1722063261914 : ::1 : GET : /
+1722063263159 : ::1 : GET : /
+1722063265714 : ::1 : GET : /users
+1722063265879 : ::1 : GET : /favicon.ico
+1722063284601 : ::1 : GET : /users
+1722063359955 : ::1 : GET : /api/users
+1722063474947 : ::1 : GET : /api/users
+1722063485833 : ::1 : GET : /api/users/66a4983fc8a835ce0aab541c
+1722063622973 : ::1 : PATCH : /api/users/66a4983fc8a835ce0aab541c
+1722063630103 : ::1 : GET : /api/users/66a4983fc8a835ce0aab541c
+1722063707886 : ::1 : GET : /api/users
+1722063723748 : ::1 : DELETE : /api/users/66a498b716f3856a0d792ab4
+1722063735038 : ::1 : GET : /api/users/66a498b716f3856a0d792ab4

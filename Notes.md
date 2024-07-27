@@ -53,3 +53,9 @@ Middleware functions can perform the following tasks:
 - Strong Support for Aggregation Pipelines
 - Works on BSON format
 - Best for Node Applications
+
+
+
+## Mongoose
+- Schema - Define the structure
+- Schema - Model (using this model, we do CRUD operations)
