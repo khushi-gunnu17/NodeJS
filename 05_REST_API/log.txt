@@ -1,0 +1,15 @@
+1722053807915 : GET : /api/users
+1722053844001 : GET : /api/users/100
+1722053940874 : POST : /api/users
+
+1722054018387 : ::1 : GET : /api/users
+1722054054481 : ::1 : GET : /api/users
+1722054862630 : ::1 : GET : /api/users
+1722054931863 : ::1 : GET : /api/users
+1722054960745 : ::1 : GET : /api/users
+1722055132687 : ::1 : GET : /api/users
+1722055384757 : ::1 : GET : /api/users
+1722055982861 : ::1 : POST : /api/users
+1722056315474 : ::1 : POST : /api/users
+1722056535353 : ::1 : GET : /api/users/4
+1722056544927 : ::1 : GET : /api/users/4000
