@@ -3,8 +3,8 @@ import { handleGenerateNewShortURL, handleGetAnalytics } from "../controllers/ur
 
 const router = express.Router()
 
-router.post( '/', handleGenerateNewShortURL )
+router.post('/', handleGenerateNewShortURL)
 
-router.get( "/analytics/:shortId", handleGetAnalytics )
+router.get("/analytics/:shortId", handleGetAnalytics)
 
 export default router

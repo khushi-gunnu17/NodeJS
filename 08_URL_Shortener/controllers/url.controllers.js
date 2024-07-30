@@ -1,13 +1,14 @@
 import {nanoid} from "nanoid"
 import URL from "../models/url.models.js"
 
-export async function handleGenerateNewShortURL(req, res) {
+
+async function handleGenerateNewShortURL(req, res) {
 
     const body = req.body
 
     if (!body.url) return res.status(400).json({error : "URL is required."})
 
-    const shortID = nanoid(8)
+    const shortID = nanoid(10)
 
     await URL.create({
         shortId : shortID,
@@ -15,12 +16,14 @@ export async function handleGenerateNewShortURL(req, res) {
         visitHistory : []
     })
 
-    return res.json( { id : shortID } )
+    return res.render('home', {id : shortID})
 
 }
 
 
-export async function handleGetAnalytics(req, res) {
+
+
+async function handleGetAnalytics(req, res) {
 
     const shortId = req.params.shortId
 
@@ -28,4 +31,13 @@ export async function handleGetAnalytics(req, res) {
 
     return res.json({ totalClicks : result.visitHistory.length, analytics : result.visitHistory })
 
+}
+
+
+
+
+
+export {
+    handleGenerateNewShortURL,
+    handleGetAnalytics,
 }
