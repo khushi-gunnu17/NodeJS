@@ -59,3 +59,10 @@ Middleware functions can perform the following tasks:
 ## Mongoose
 - Schema - Define the structure
 - Schema - Model (using this model, we do CRUD operations)
+
+
+
+## Authentication
+There are two types of patterns in authentication.
+- Statefull = Which maintains state or data or server side
+- Stateless = which has no state
