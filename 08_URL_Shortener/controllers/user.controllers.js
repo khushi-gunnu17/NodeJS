@@ -38,6 +38,7 @@ async function handleUserLogin(req, res) {
     const token = setUser(user)
     res.cookie("uid", token)       // could give more options here, like domain, expiry
     
+    // res.json({token})
     return res.redirect('/')
 
 }
