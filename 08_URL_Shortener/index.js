@@ -6,7 +6,7 @@ import staticRoutes from './routes/staticRouter.js'
 import userRoutes from "./routes/user.routes.js"
 import path from "path"
 import cookieParser from "cookie-parser"
-import {restrictToLoggedInUserOnly} from "./middlewares/auth.js"
+import {restrictToLoggedInUserOnly, checkAuth} from "./middlewares/auth.js"
 
 const app = express()
 const PORT = 8000
@@ -23,7 +23,7 @@ app.set('view engine', 'ejs')
 app.set("views", path.resolve('./views'))
 
 
-app.use("/", staticRoutes)
+app.use("/", checkAuth, staticRoutes)
 app.use("/user", userRoutes)
 app.use('/urls', restrictToLoggedInUserOnly, urlRoutes)
 

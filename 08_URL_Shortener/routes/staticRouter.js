@@ -6,22 +6,22 @@ const router = express.Router()
 
 router.get('/', async(req, res) => {
 
-    // if (!req.user) return res.redirect('/user/login')
+    if (!req.user) return res.redirect('/user/login')
 
-    const allURLs = await URL.find({  })
+    const allURLs = await URL.find({ createdBy : req.user._id })
     return res.render('home', {urls : allURLs})
 
 })
 
 
 
-router.get('/signup', async(req, res) => {
+router.get('/signup', (req, res) => {
     return res.render('signup')
 })
 
 
 
-router.get('/user/login', async(req, res) => {
+router.get('/user/login', (req, res) => {
     return res.render('login')
 })
 

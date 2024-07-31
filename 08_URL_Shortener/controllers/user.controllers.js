@@ -1,6 +1,6 @@
 import User from "../models/user.models.js"
 import { v4 as uuidv4 } from 'uuid';
-import { setUser, getUser } from "../utils/auth.utils.js";
+import { setUser } from "../utils/auth.utils.js";
 
 async function handleUserSignup(req, res) {
 

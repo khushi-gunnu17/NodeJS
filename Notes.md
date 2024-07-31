@@ -66,3 +66,10 @@ Middleware functions can perform the following tasks:
 There are two types of patterns in authentication.
 - Statefull = Which maintains state or data or server side
 - Stateless = which has no state
+
+
+
+## How to transfer uid ?
+- cookies
+- response
+- headers
