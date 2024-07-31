@@ -36,7 +36,7 @@ async function handleUserLogin(req, res) {
     // res.cookie("uid", sessionId)
     
     const token = setUser(user)
-    res.cookie("uid", token)
+    res.cookie("uid", token)       // could give more options here, like domain, expiry
     
     return res.redirect('/')
 

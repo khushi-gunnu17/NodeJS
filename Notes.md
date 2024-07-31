@@ -73,3 +73,7 @@ There are two types of patterns in authentication.
 - cookies
 - response
 - headers
+
+
+## Cookies
+- They are domain specific.
