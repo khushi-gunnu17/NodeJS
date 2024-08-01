@@ -77,3 +77,9 @@ There are two types of patterns in authentication.
 
 ## Cookies
 - They are domain specific.
+
+
+## What are Websockets ?
+- Websockets are like bidirectional connections between the client and server.
+- It is just a protocol which uses upgraded headers
+- Thus, no need of polling now.
