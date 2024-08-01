@@ -86,5 +86,3 @@ There are two types of patterns in authentication.
 
 
 
-## Streams in NodeJs
-- 
