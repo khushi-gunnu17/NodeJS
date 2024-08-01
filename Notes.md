@@ -86,3 +86,24 @@ There are two types of patterns in authentication.
 
 
 
+
+## What is Nginx ?
+- Nginx is a powerful web server and uses a non threaded, event driven architecture.
+- It can also do other important things, such as load balancing and HTTP Caching, or be used as a reverse proxy.
+- VPN server is an example of forward proxy. (when many clients connect to a vpn server and that server then connects to the main server)
+- The most popular reverse proxy server is nginx.
+
+- Load Balancing => mainly to prevent load on one server. so apply techniques like round robin algorithm.
+- Reverse Proxy => When there is one client but there are multiple servers to answer to your req.
+- HTTP Caching => The nginx server can cache some requests which is more than once called by the server.
+
+
+
+### Advantages
+- Can handle 10000 Concurrent requests.
+- Cache HTTP Requests
+- Act as Reverse Proxy
+- Act as Load Balancer
+- Act as an API Gateway
+- Serve and Cache Static files like images, videos, etc.
+- Handle SSL Certificates
